@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CrearContactoActivity"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/et_newContactName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Insert Username"
+        android:text=""
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/et_newContactEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Insert email"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/et_newContactName"
+        app:layout_constraintStart_toEndOf="@+id/et_newContactName"/>
+
+    <EditText
+        android:id="@+id/et_newContactPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Insert phone"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/et_newContactEmail"
+        app:layout_constraintStart_toEndOf="@+id/et_newContactEmail"/>
+
+    <EditText
+        android:id="@+id/et_newContactWebsite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Insert website"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/et_newContactPhone"
+        app:layout_constraintStart_toEndOf="@+id/et_newContactPhone"/>
+
+    <EditText
+        android:id="@+id/et_newContactStreet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Insert street"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/et_newContactWebsite"
+        app:layout_constraintStart_toEndOf="@+id/et_newContactWebsite"/>
+
+    <EditText
+        android:id="@+id/et_newContactCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Insert city"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/et_newContactStreet"
+        app:layout_constraintStart_toEndOf="@+id/et_newContactStreet"/>
+
+    <EditText
+        android:id="@+id/et_newContactZipcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Insert zipcode"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/et_newContactCity"
+        app:layout_constraintStart_toEndOf="@+id/et_newContactCity"/>
+
+    <Button
+        android:id="@+id/btn_createContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crear Contacto"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_newContactZipcode" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactDetailActivity"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_contactName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        tools:text="Andrea"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_contactEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        tools:text="Andrea@andrea.com"
+        app:layout_constraintTop_toBottomOf="@+id/tv_contactName"
+        app:layout_constraintStart_toEndOf="@+id/tv_contactName"/>
+
+    <TextView
+        android:id="@+id/tv_contactPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        tools:text="666444333.com"
+        app:layout_constraintTop_toBottomOf="@+id/tv_contactEmail"
+        app:layout_constraintStart_toEndOf="@+id/tv_contactEmail"/>
+
+    <TextView
+        android:id="@+id/tv_contactWebsite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        tools:text="www.andrea.com"
+        app:layout_constraintTop_toBottomOf="@+id/tv_contactPhone"
+        app:layout_constraintStart_toEndOf="@+id/tv_contactPhone"/>
+
+    <TextView
+        android:id="@+id/tv_contactStreet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        tools:text="calle de las barracas"
+        app:layout_constraintTop_toBottomOf="@+id/tv_contactWebsite"
+        app:layout_constraintStart_toEndOf="@+id/tv_contactWebsite"/>
+
+    <TextView
+        android:id="@+id/tv_contactCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        tools:text="Barcelona"
+        app:layout_constraintTop_toBottomOf="@+id/tv_contactStreet"
+        app:layout_constraintStart_toEndOf="@+id/tv_contactStreet"/>
+
+    <TextView
+        android:id="@+id/tv_contactZipcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        tools:text="y eso que es"
+        app:layout_constraintTop_toBottomOf="@+id/tv_contactCity"
+        app:layout_constraintStart_toEndOf="@+id/tv_contactCity"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
